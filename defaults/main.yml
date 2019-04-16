@@ -1,0 +1,4 @@
+---
+# defaults file for phpmyadmin
+
+PHPMYADMIN_PORT: 25080 
