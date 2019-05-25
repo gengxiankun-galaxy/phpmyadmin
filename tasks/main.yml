@@ -2,15 +2,15 @@
 # tasks file for phpmyadmin
 
 - name: 清除旧数据及旧容器
-  shell: 'docker-compose -f /opt/gengxiankun-galaxy/phpmyadmin/docker-compose.yaml rm -fsva;rm -rf /opt/gengxiankun-galaxy/phpmyadmin/*'
+  shell: 'docker-compose -f {{ OPT_PTAH }}/phpmyadmin/docker-compose.yaml rm -fsva;rm -rf {{ OPT_PTAH }}/phpmyadmin/*'
   ignore_errors: yes
 
 - name: phpmyadmin 目录预处理
-  shell: '[[ ! -d "/opt/gengxiankun-galaxy/phpmyadmin" ]] && mkdir -vp /opt/gengxiankun-galaxy/phpmyadmin'
+  shell: '[[ ! -d "{{ OPT_PTAH }}/phpmyadmin" ]] && mkdir -vp {{ OPT_PTAH }}/phpmyadmin'
   ignore_errors: yes
 
 - name: 配置 phpmyadmin docker-compose.yaml
-  template: src=docker-compose.yaml.j2 dest=/opt/gengxiankun-galaxy/phpmyadmin/docker-compose.yaml
+  template: src=docker-compose.yaml.j2 dest={{ OPT_PTAH }}/phpmyadmin/docker-compose.yaml
 
 - name: 运行服务
-  shell: 'docker-compose -f /opt/gengxiankun-galaxy/phpmyadmin/docker-compose.yaml up -d'
+  shell: 'docker-compose -f {{ OPT_PTAH }}/phpmyadmin/docker-compose.yaml up -d'

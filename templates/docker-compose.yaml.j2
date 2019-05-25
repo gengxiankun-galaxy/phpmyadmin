@@ -4,7 +4,7 @@ services:
 
     phpmyadmin:
         container_name: phpmyadmin
-        image: daocloud.io/daocloud/phpmyadmin
+        image: {{ PHPMYADMIN_IMAGE }}
         restart: always
         expose:
             - '80'

@@ -1,4 +1,6 @@
 ---
 # defaults file for phpmyadmin
 
-PHPMYADMIN_PORT: 25080 
+PHPMYADMIN_PORT: 25080
+OPT_PATH: '/opt/gengxiankun-galaxy'
+PHPMYADMIN_IMAGE: 'daocloud.io/daocloud/phpmyadmin'
