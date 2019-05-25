@@ -1,12 +1,18 @@
 PHPMYADMIN
 =========
 
-Deploy phpmyadmin service via ansible.
+Deploy the phpmyadmin service running under the container via ansible.
+
+Installation
+------------
+
+`ansible-galaxy install gengxiankun.phpmyadmin`
 
 Requirements
 ------------
 
-- Docker
+- CentOS 7.0+
+- [Docker](https://github.com/gengxiankun-galaxy/docker)
 
 Role Variables
 --------------
