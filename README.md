@@ -18,8 +18,8 @@ Role Variables
 
 | parameter | description |
 | --------- | ----------- |
-| PHPMYADMIN_PORT | Phpmyadmin external port |
-| OPT_PATH | Deployment service configuration directory |
+| PHPMYADMIN_PORT | phpmyadmin external port |
+| OPT_PATH | deployment service configuration directory |
 | PHPMYADMIN_IMAGE | phpmyadmin docker image |
 
 Example Playbook
