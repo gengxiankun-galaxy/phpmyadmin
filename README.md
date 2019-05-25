@@ -11,7 +11,6 @@ Installation
 Requirements
 ------------
 
-- CentOS 7.0+
 - [Docker](https://github.com/gengxiankun-galaxy/docker)
 
 Role Variables
