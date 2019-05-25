@@ -8,7 +8,7 @@ Installation
 
 `ansible-galaxy install gengxiankun.phpmyadmin`
 
-Requirements
+Dependencies
 ------------
 
 - [Docker](https://github.com/gengxiankun-galaxy/docker)
